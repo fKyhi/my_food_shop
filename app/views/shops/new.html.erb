@@ -1,3 +1,54 @@
 <%= render "shared/second-header" %>
 
+<div class="main">
+  <div class="inner">
+    <div class="form-wrapper">
+      <h2 class="page-heading">新規Shop情報投稿</h2>
+
+      <%= form_with(model: @shop, lacal: true) do |f| %>
+        <div class="img-upload">
+          <div class="weight-bold-text">
+            shop画像
+            <span class="indispensable">必須</span>
+          </div>
+          <div class="click-upload">
+            <p>
+              クリックしてファイルをアップロード
+            </p>
+            <%= f.file_field :image, id:"shop-image" %>
+          </div>
+        </div>
+
+        <div class="new-shops">
+            <div class="weight-bold-text">
+              Shop名
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.text_area :name, class:"shops-text", id:"shop-name", placeholder:"Shop名 (必須 40文字まで)", maxlength:"40"%>
+            <div class="weight-bold-text">
+              カテゴリー
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"shop-category"}) %>
+            <div class="weight-bold-text">
+              Address
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.text_area :address, class:"shops-text", id:"shop-address", placeholder:"例) 〇〇県〇〇市"%>
+            <div class="weight-bold-text">
+              Shop情報
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.text_area :explain, class:"shops-text", id:"shop-explain", placeholder:"例) 〇〇が美味しい"%>
+
+            <div class="shop-btn-contents">
+              <%= f.submit "投稿する" ,class:"shop-new-btn" %>
+              <%= link_to 'トップページへ戻る', root_path, class:'back-btn'%>
+            </div>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>
 <%= render "shared/footer" %>
