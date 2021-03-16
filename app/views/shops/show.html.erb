@@ -29,6 +29,31 @@
       </tr>
     </tbody>
   </table>
+
+  <%= link_to "Food情報追加", new_shop_food_path(shop_id: @shop.id), class:"new-food"%>
+
+  <div class="food-contents">
+  <h2 class="title">Food一覧</h2>
+  <ul class="food-lists">
+    <% @foods.each do |food|%>
+      <li class="list">
+        <%= link_to "#_path" do %>
+          <div class="food-img-content">
+            <%= image_tag food.image, class: "food-img" if food.image.attached? %>
+          </div>
+          <div class="food-info">
+            <h3 class="food-name">
+              <%= food.name %>
+            </h3>
+            <div class="food-explain">
+              <%= food.explain %>
+            </div>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>
 </div>
 
 <%= render "shared/footer" %>

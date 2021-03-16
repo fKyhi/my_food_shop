@@ -18,6 +18,8 @@ class ShopsController < ApplicationController
 
   def show
     @shop = Shop.find(params[:id])
+    @food = Food.new
+    @foods = @shop.foods.includes(:user)
   end
 
   def edit
