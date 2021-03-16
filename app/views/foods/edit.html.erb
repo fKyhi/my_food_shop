@@ -1,0 +1,43 @@
+<%= render "shared/header" %>
+
+<div class="main">
+  <div class="inner">
+    <div class="form-wrapper">
+      <h2 class="page-heading">Food情報編集ページ</h2>
+
+      <%= form_with(model: @food, url: shop_food_path, local: true) do |f| %>
+        <div class="img-upload">
+          <div class="weight-bold-text">
+            Food画像
+            <span class="indispensable">必須</span>
+          </div>
+          <div class="click-upload">
+            <p>
+            クリックしてファイルをアップロード
+            </p>
+            <%= f.file_field :image, id:"food-image" %>
+          </div>
+        </div>
+
+        <div class="new-foods">
+          <div class="weight-bold-text">
+            Food名
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.text_area :name, class:"foods-text", id:"food-name", placeholder:"Food名 (必須 40文字まで)", maxlength:"40"%>
+          <div class="weight-bold-text">
+            Food情報
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.text_area :explain, class:"foods-text", id:"food-explain", placeholder:"例) 〇〇が美味しい"%>
+        </div>
+        <div class="food-btn-contents">
+          <%= f.submit "投稿する" ,class:"food-new-btn" %>
+        </div>
+      <% end %>
+      <%= link_to "Destroy", shop_food_path, method: :delete, class: "food-destroy-btn"%>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

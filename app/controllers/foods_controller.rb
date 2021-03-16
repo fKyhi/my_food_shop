@@ -12,6 +12,25 @@ class FoodsController < ApplicationController
     end
   end
 
+  def edit
+    @food = Food.find(params[:id])
+  end
+
+  def update
+    food = Food.find(params[:id])
+    if food.update(food_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    food = Food.find(params[:id])
+    food.destroy
+    redirect_to root_path
+  end
+
   private
 
   def food_params
