@@ -1,0 +1,34 @@
+<%= render "shared/header" %>
+
+<div class="shop-show">
+  <%if current_user.id == @shop.user_id %>
+    <%= link_to "Edit", edit_shop_path(@shop.id), method: :get, class: "shop-edit-btn" %>
+    <%= link_to "Destroy", shop_path(@shop.id), method: :delete, class: "shop-destroy-btn"%>
+  <% end %>
+
+  <div class="shop-img-content">
+    <%= image_tag @shop.image ,class:"shop-box-img"%>
+  </div>
+  <table class="detail-table">
+    <tbody>
+      <tr>
+        <th class="detail-shop">Shop名</th>
+        <td class="detail-value"><%= @shop.name %></td>
+      </tr>
+      <tr>
+        <th class="detail-shop">カテゴリー</th>
+        <td class="detail-value"><%= @shop.category.name %></td>
+      </tr>
+      <tr>
+        <th class="detail-shop">Address</th>
+        <td class="detail-value"><%= @shop.address %></td>
+      </tr>
+      <tr>
+        <th class="detail-shop">Shop情報</th>
+        <td class="detail-value"><%= @shop.explain %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<%= render "shared/footer" %>
