@@ -1,39 +1,51 @@
 <%= render "shared/header" %>
 
 <div class="shop-show">
-  <%if current_user.id == @shop.user_id %>
-    <%= link_to "Edit", edit_shop_path(@shop.id), method: :get, class: "shop-edit-btn" %>
-    <%= link_to "Destroy", shop_path(@shop.id), method: :delete, class: "shop-destroy-btn"%>
-  <% end %>
+  <div class="btn-contents">
+    <% if user_signed_in? && current_user.id == @shop.user_id %>
+      <%= link_to "Edit", edit_shop_path(@shop.id), method: :get, class: "shop-edit-btn" %>
+      <%= link_to "Destroy", shop_path(@shop.id), method: :delete, class: "shop-destroy-btn"%>
+    <% end %>
+  </div>
 
   <div class="shop-img-content">
     <%= image_tag @shop.image ,class:"shop-box-img"%>
   </div>
-  <table class="detail-table">
-    <tbody>
-      <tr>
-        <th class="detail-shop">Shop名</th>
-        <td class="detail-value"><%= @shop.name %></td>
-      </tr>
-      <tr>
-        <th class="detail-shop">カテゴリー</th>
-        <td class="detail-value"><%= @shop.category.name %></td>
-      </tr>
-      <tr>
-        <th class="detail-shop">Address</th>
-        <td class="detail-value"><%= @shop.address %></td>
-      </tr>
-      <tr>
-        <th class="detail-shop">Shop情報</th>
-        <td class="detail-value"><%= @shop.explain %></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-contents">
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-shop">投稿者</th>
+          <td class="detail-value"><%= @shop.user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-shop">Shop名</th>
+          <td class="detail-value"><%= @shop.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-shop">カテゴリー</th>
+          <td class="detail-value"><%= @shop.category.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-shop">Address</th>
+          <td class="detail-value"><%= @shop.address %></td>
+        </tr>
+        <tr>
+          <th class="detail-shop">Shop情報</th>
+          <td class="detail-value"><%= @shop.explain %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  <%= link_to "Food情報追加", new_shop_food_path(shop_id: @shop.id), class:"new-food"%>
+  <div class="new-food-btn">
+    <%= link_to "Food情報追加", new_shop_food_path(shop_id: @shop.id), class:"new-food"%>
+  </div>
 
   <div class="food-contents">
-    <h2 class="title">Food一覧</h2>
+    <div class="food-title-content">
+      <h2 class="food-title">Food Lists</h2>
+    </div>
     <ul class="food-lists">
       <% @foods.each do |food|%>
         <li class="list">
@@ -41,18 +53,18 @@
             <div class="food-img-content">
               <%= image_tag food.image, class: "food-img" if food.image.attached? %>
             </div>
+          <% end %>
             <div class="food-info">
               <div class="food-user-nickname">
-                <%= food.user.nickname %>
+                投稿者：<%= food.user.nickname %>
               </div>
               <h3 class="food-name">
-                <%= food.name %>
+                Food名：<%= food.name %>
               </h3>
               <div class="food-explain">
-                <%= food.explain %>
+                Food情報：<%= food.explain %>
               </div>
             </div>
-          <% end %>
         </li>
       <% end %>
     </ul>

@@ -17,7 +17,7 @@
       Shop名
       <span class="indispensable">必須</span>
     </div>
-    <%= f.text_area :name, class:"shops-text", id:"shop-name", placeholder:"Shop名 (必須 40文字まで)", maxlength:"40"%>
+    <%= f.text_field :name, class:"shops-text", id:"shop-name", placeholder:"Shop名 (必須 40文字まで)", maxlength:"40"%>
     <div class="weight-bold-text">
       カテゴリー
       <span class="indispensable">必須</span>
@@ -32,7 +32,7 @@
       Shop情報
       <span class="indispensable">必須</span>
     </div>
-    <%= f.text_area :explain, class:"shops-text", id:"shop-explain", placeholder:"例) 〇〇が美味しい"%>
+    <%= f.text_area :explain, class:"shops-text", id:"shop-explain", placeholder:"例) 〇〇の専門店"%>
 
     <div class="shop-btn-contents">
       <%= f.submit "投稿する" ,class:"shop-new-btn" %>

@@ -3,12 +3,13 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  min-width: 900px;
   background-color: #ffffff;
 }
 
 .form-wrap {
   height: 100%;
-  width: 50%;
+  width: 100%;
   background-color: #cdcdc0;
   padding: 50px;
   display: flex;
@@ -16,11 +17,11 @@
   flex-direction: column;
 }
 
-.form-header {
+.form-header-text {
   text-align: center;
   color: #ffffff;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 3rem;
   margin-bottom: 40px;
 }
 
@@ -33,6 +34,10 @@
 }
 
 .input-default {
+  height: 48px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 20px;
 }
 
 .form-text-wrap {
