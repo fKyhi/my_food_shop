@@ -1,6 +1,6 @@
 class FoodsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
-  before_action :move_to_root_path, only: [:new, :create, :edit, :update, :destroy]
+  before_action :move_to_root_path, only: [:edit, :update, :destroy]
   before_action :set_food, only: [:edit, :update, :destroy]
 
   def new

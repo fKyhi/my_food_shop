@@ -51,7 +51,7 @@ class ShopsController < ApplicationController
   def move_to_index
     shop = Shop.find(params[:id])
     unless user_signed_in? && current_user.id == shop.user_id
-      redirect_to action:index
+      redirect_to action: :index
     end
   end
 
