@@ -46,9 +46,12 @@
     <div class="food-title-content">
       <h2 class="food-title">Food Lists</h2>
     </div>
+
+    <% if user_signed_in?%>
     <div class="new-food-btn">
       <%= link_to "Food情報追加", new_shop_food_path(shop_id: @shop.id), class:"new-food"%>
-  </div>
+    </div>
+    <% end %>
     <ul class="food-lists">
       <% @foods.each do |food|%>
         <li class="list">
