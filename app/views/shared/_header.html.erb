@@ -6,7 +6,7 @@
   <div class="nav">
     <ul class="lists-right">
       <% if user_signed_in? %>
-        <li><%= link_to current_user.nickname, root_path, class: "user-nickname" %></li>
+        <li><%= link_to current_user.nickname, edit_user_path(current_user), class: "user-nickname" %></li>
         <li><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "logout" %></li>
       <% else %>
         <li><%= link_to "Log in", new_user_session_path, class: "login" %></li>

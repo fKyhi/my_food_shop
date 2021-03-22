@@ -33,9 +33,9 @@ class ShopsController < ApplicationController
   end
 
   def update
-    shop = Shop.find(params[:id])
-    if shop.update(shop_params)
-      redirect_to root_path
+    @shop = Shop.find(params[:id])
+    if @shop.update(shop_params)
+      redirect_to shop_path
     else
       render :edit
     end

@@ -16,7 +16,7 @@
   margin: 50px 50px 50px 150px;
   padding: 10px 30px;
   font-size: 1.5rem;
-  background-color: orange;
+  background-color: #eed13f;
   border-radius: 10px;
   text-decoration: none;
   color: #ffffff;
@@ -29,7 +29,7 @@
   padding: 10px 30px;
   margin-left: 50px;
   font-size: 1.5rem;
-  background-color: orchid;
+  background-color: #00005d;
   border-radius: 10px;
   text-decoration: none;
   color: #ffffff;
@@ -80,28 +80,24 @@
   background-color: #ffffff
 }
 
-.detail-shop {
-  background-color: ;
-}
-
 .new-food-btn {
   width: 100vw;
-  margin: 40px 0;
-  padding-left: 30px;
+  text-align: center;
+  height: 100px;
 }
 .new-food {
-  background-color: #f69454;
+  background-color: #b0941e;
   font-size: 2rem;
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
   padding: 25px;
   border-radius: 10px;
-  
 }
 
 .food-contents {
-  background-color: #ffffff;
+  background-color: #f6efdb;
+  margin-top: 50px;
 }
 
 .food-title-content {
@@ -111,6 +107,8 @@
   color: #111111;
   font-family: 'Belgrano', serif;
   text-align: center;
+  border-bottom: 5px solid #111111;
+  margin-bottom: 50px;
 }
 
 .food-lists {

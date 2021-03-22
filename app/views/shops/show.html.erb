@@ -9,7 +9,7 @@
   </div>
 
   <div class="shop-img-content">
-    <%= image_tag @shop.image ,class:"shop-box-img"%>
+    <%= image_tag @shop.image, class:"shop-box-img"%>
   </div>
   <div class="table-contents">
     <table class="detail-table">
@@ -38,14 +38,17 @@
     </table>
   </div>
 
-  <div class="new-food-btn">
+  <%# <div class="new-food-btn">
     <%= link_to "Food情報追加", new_shop_food_path(shop_id: @shop.id), class:"new-food"%>
-  </div>
+  <%# </div> %>
 
   <div class="food-contents">
     <div class="food-title-content">
       <h2 class="food-title">Food Lists</h2>
     </div>
+    <div class="new-food-btn">
+      <%= link_to "Food情報追加", new_shop_food_path(shop_id: @shop.id), class:"new-food"%>
+  </div>
     <ul class="food-lists">
       <% @foods.each do |food|%>
         <li class="list">

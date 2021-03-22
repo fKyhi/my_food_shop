@@ -6,6 +6,9 @@
       <h2 class="page-heading">Food情報編集ページ</h2>
 
       <%= form_with(model: @food, url: shop_food_path, local: true) do |f| %>
+
+      <%= render 'shared/error_messages', model: f.object %>
+
         <div class="img-upload">
           <div class="weight-bold-text">
             Food画像
@@ -32,10 +35,12 @@
           <%= f.text_area :explain, class:"foods-text", id:"food-explain", placeholder:"例) 〇〇が美味しい"%>
         </div>
         <div class="food-btn-contents">
-          <%= f.submit "投稿する" ,class:"food-new-btn" %>
+          <%= f.submit "Edit" ,class:"food-edit-btn" %>
         </div>
       <% end %>
-      <%= link_to "Destroy", shop_food_path, method: :delete, class: "food-destroy-btn"%>
+      <div class="food-destroy-content">
+        <%= link_to "Destroy", shop_food_path, method: :delete, class: "food-destroy-btn"%>
+      </div>
     </div>
   </div>
 </div>

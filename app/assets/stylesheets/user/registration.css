@@ -4,12 +4,12 @@
   height: 100vh;
   width: 100vw;
   min-width: 900px;
-  background-color: #ffffff;
+  background-color: #cdcdc0;
 }
 
 .form-wrap {
   height: 100%;
-  width: 100%;
+  width: 80%;
   background-color: #cdcdc0;
   padding: 50px;
   display: flex;
@@ -74,5 +74,7 @@
   border-radius: 5px;
   color: #ffffff;
   border: none;
+  font-weight: bold;
+  font-family: 'Belgrano', serif;
   cursor: pointer;
 }

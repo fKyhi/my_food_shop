@@ -6,6 +6,9 @@
       <h2 class="page-heading">新規Food情報投稿</h2>
 
       <%= form_with(model: @food, url: shop_foods_path, local: true) do |f| %>
+
+      <%= render 'shared/error_messages', model: f.object %>
+
         <div class="img-upload">
           <div class="weight-bold-text">
             Food画像
@@ -24,7 +27,7 @@
             Food名
             <span class="indispensable">必須</span>
           </div>
-          <%= f.text_area :name, class:"foods-text", id:"food-name", placeholder:"Food名 (必須 40文字まで)", maxlength:"40"%>
+          <%= f.text_field :name, class:"foods-text", id:"food-name", placeholder:"例) カレーライス", maxlength:"40"%>
           <div class="weight-bold-text">
             Food情報
             <span class="indispensable">必須</span>
