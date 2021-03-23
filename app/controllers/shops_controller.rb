@@ -1,6 +1,6 @@
 class ShopsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :destroy, :update]
-  before_action :move_to_index, only: [:new, :create, :edit, :destroy, :update]
+  before_action :move_to_index, only: [:edit, :destroy, :update]
   before_action :set_shop, only: [:show, :edit, :update, :destroy]
 
   def index
