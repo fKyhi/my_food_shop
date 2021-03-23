@@ -16,12 +16,14 @@
 
 .nav {
   font-size: 20px;
+  padding: 3px 0;
 }
 
 .lists-right {
   display: flex;
   align-items: center;
   font-family: 'Belgrano', serif;
+  list-style: none;
 }
 
 .user-nickname {

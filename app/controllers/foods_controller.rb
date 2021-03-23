@@ -21,7 +21,7 @@ class FoodsController < ApplicationController
 
   def update
     if @food.update(food_params)
-      redirect_to shop_path(id: food.shop_id)
+      redirect_to shop_path(id: @food.shop_id)
     else
       render :edit
     end
@@ -29,7 +29,7 @@ class FoodsController < ApplicationController
 
   def destroy
     @food.destroy
-    redirect_to shop_path(id: food.shop_id)
+    redirect_to shop_path(id: @food.shop_id)
   end
 
   private
