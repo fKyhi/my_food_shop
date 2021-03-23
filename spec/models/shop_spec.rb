@@ -21,7 +21,7 @@ RSpec.describe Shop, type: :model do
       it 'category_idが「--」だと保存できない' do
         @shop.category_id = 1
         @shop.valid?
-        expect(@shop.errors.full_messages).to include "Category must be other than 1"
+        expect(@shop.errors.full_messages).to include 'Category must be other than 1'
       end
       it 'addressが空だと保存できない' do
         @shop.address = ''
@@ -40,6 +40,5 @@ RSpec.describe Shop, type: :model do
         expect(@shop.errors.full_messages).to include "Image can't be blank"
       end
     end
-
   end
 end

@@ -38,15 +38,12 @@ class FoodsController < ApplicationController
     params.require(:food).permit(:name, :explain, :image).merge(user_id: current_user.id, shop_id: params[:shop_id])
   end
 
-def move_to_root_path
-  food = Food.find(params[:id])
-  unless user_signed_in? && current_user.id == food.user_id
-    redirect_to root_path
+  def move_to_root_path
+    food = Food.find(params[:id])
+    redirect_to root_path unless user_signed_in? && current_user.id == food.user_id
   end
-end
 
-def set_food
-  @food = Food.find(params[:id])
-end
-
+  def set_food
+    @food = Food.find(params[:id])
+  end
 end

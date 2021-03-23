@@ -3,7 +3,6 @@ class ShopsController < ApplicationController
   before_action :move_to_index, only: [:new, :create, :edit, :destroy, :update]
   before_action :set_shop, only: [:show, :edit, :update, :destroy]
 
-
   def index
     @shops = Shop.all
   end
@@ -50,13 +49,10 @@ class ShopsController < ApplicationController
 
   def move_to_index
     shop = Shop.find(params[:id])
-    unless user_signed_in? && current_user.id == shop.user_id
-      redirect_to action: :index
-    end
+    redirect_to action: :index unless user_signed_in? && current_user.id == shop.user_id
   end
 
   def set_shop
     @shop = Shop.find(params[:id])
   end
-
 end

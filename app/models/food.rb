@@ -8,5 +8,4 @@ class Food < ApplicationRecord
     validates :name
     validates :explain
   end
-
 end

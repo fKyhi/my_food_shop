@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :food do
-    name {Faker::Name}
-    explain {'aaa'}
+    name { Faker::Name }
+    explain { 'aaa' }
 
     association :user
     association :shop

@@ -29,6 +29,5 @@ RSpec.describe Food, type: :model do
         expect(@food.errors.full_messages).to include "Explain can't be blank"
       end
     end
-
   end
 end

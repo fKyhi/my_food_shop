@@ -1,9 +1,9 @@
 FactoryBot.define do
   factory :shop do
-    name {Faker::Name}
-    category_id {2}
-    address {'aaa'}
-    explain {'aaa'}
+    name { Faker::Name }
+    category_id { 2 }
+    address { 'aaa' }
+    explain { 'aaa' }
 
     association :user
 
