@@ -34,6 +34,7 @@
   border: 1px solid #ccc;
   resize: none;
   padding: 0 0 0 8px;
+  height: 40px;
 }
 
 .shop-btn-contents {
