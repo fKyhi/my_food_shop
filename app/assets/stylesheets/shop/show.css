@@ -38,9 +38,10 @@
 }
 
 .shop-img-content {
-  width: 45vw;
+  width: 40vw;
   height: 50vh;
   background-color: #ffffff;
+  margin-left: 15px;
 }
 
 .shop-box-img {
