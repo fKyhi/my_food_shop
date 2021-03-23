@@ -59,7 +59,6 @@
 
 .detail-table {
   width: 50vw;
-  background-color: ;
   border: 2px solid #111111;
 }
 
@@ -77,7 +76,7 @@
   width: 25vw;
   padding-left: 15px;
   border: 1px solid #111111;
-  background-color: #ffffff
+  background-color: #ffffff;
 }
 
 .new-food-btn {
