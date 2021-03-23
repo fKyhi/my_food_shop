@@ -1,0 +1,17 @@
+.login-btn {
+  height: 50px;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.login-red-btn {
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #f69454;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

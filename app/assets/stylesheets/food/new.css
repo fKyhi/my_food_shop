@@ -1,0 +1,28 @@
+.foods-text {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  padding: 0 0 0 8px;
+}
+
+.weight-bold-text {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.food-btn-contents {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.food-new-btn {
+  font-size: 1.5rem;
+  padding: 10px 40px;
+  background-color: #b0941e;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

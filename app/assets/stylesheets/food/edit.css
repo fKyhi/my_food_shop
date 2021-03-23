@@ -1,0 +1,30 @@
+.food-edit-btn {
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  background-color: #eed13f;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Belgrano', serif;
+  border: none;
+  cursor: pointer;
+}
+
+.food-destroy-content {
+  width: 100vw;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.food-destroy-btn {
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  background-color: #00005d;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Belgrano', serif;
+  cursor: pointer;
+}

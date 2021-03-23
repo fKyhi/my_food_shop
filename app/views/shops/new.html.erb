@@ -1,0 +1,11 @@
+<%= render "shared/header" %>
+
+<div class="main">
+  <div class="form-wrapper">
+    <h2 class="page-heading">新規Shop情報投稿</h2>
+
+    <%= render partial: 'form', locals: { shop: @shop } %>
+
+  </div>
+</div>
+<%= render "shared/footer" %>
