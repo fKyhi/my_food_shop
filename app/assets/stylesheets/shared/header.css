@@ -6,6 +6,10 @@
   background-color: #778287;
 }
 
+.header-title {
+  padding: 3px 0;
+}
+
 .title {
   font-size: 2rem;
   color: #ffffff;
@@ -16,7 +20,7 @@
 
 .nav {
   font-size: 20px;
-  padding: 3px 0;
+  padding: 5px 0;
 }
 
 .lists-right {
