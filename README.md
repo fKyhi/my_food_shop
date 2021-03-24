@@ -25,9 +25,9 @@
 #### `・一覧画面へ遷移する`
 #### `・新規投稿は右下の投稿アイコンをクリック`
 #### `・投稿完了後は一覧画面へ戻る`<br>
-[![Image from Gyazo](https://i.gyazo.com/f07f54ecba76dd2cf509e7915687a0a8.mp4)]
+![demo](https://i.gyazo.com/f07f54ecba76dd2cf509e7915687a0a8.mp4)
 (https://i.gyazo.com/f07f54ecba76dd2cf509e7915687a0a8)
-[![Image from Gyazo](https://i.gyazo.com/135adcc0c54f7f93e30e97ccf445fa3b.mp4)]
+![Image from Gyazo](https://i.gyazo.com/135adcc0c54f7f93e30e97ccf445fa3b.mp4)
 (https://i.gyazo.com/135adcc0c54f7f93e30e97ccf445fa3b)
 <br>
 
@@ -55,6 +55,7 @@
 
 # 機能一覧
 | 機能 | 概要 |
+| ------------- | ----------------------------- |
 | ユーザー管理機能 | 新規登録/ログイン/ログアウトが可能 |
 | ユーザー情報編集/削除機能 | ログイン中のユーザーでアカウント本人であればプロフィール編集/削除が可能 |
 | 店舗投稿機能 | 画像付きで詳細投稿が可能 |
