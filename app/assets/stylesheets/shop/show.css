@@ -110,6 +110,10 @@
   margin-bottom: 50px;
 }
 
+.food-title {
+  padding: 0 0;
+}
+
 .food-lists {
   display: flex;
   flex-wrap: wrap;
@@ -155,6 +159,7 @@ text-align: center;
 
 .food-info {
   font-weight: bold;
+  font-size: 16px;
 }
 
 .food-name {
