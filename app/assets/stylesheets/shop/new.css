@@ -12,6 +12,16 @@
   background-color: #cdcdc0;
 }
 
+.weight-bold-text {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.click-upload {
+  font-weight: bold;
+  font-size: 16px;
+}
+
 .page-heading {
   text-align: center;
   color: #ffffff;
