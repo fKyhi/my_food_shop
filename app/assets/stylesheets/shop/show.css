@@ -41,7 +41,7 @@
   width: 40vw;
   height: 50vh;
   background-color: #ffffff;
-  margin-left: 15px;
+  margin: 0 0 30px 15px;
 }
 
 .shop-box-img {
@@ -97,7 +97,6 @@
 
 .food-contents {
   background-color: #f6efdb;
-  margin-top: 50px;
 }
 
 .food-title-content {
@@ -121,7 +120,7 @@
 }
 
 .food-lists>.list {
-  width: 20vw;
+  width: 400px;
   margin: 25px 15px;
   padding: 0.5em 1.5em;
   border-top: solid 2px black;
@@ -146,7 +145,8 @@
 }
 
 .food-img {
-  width: 80%;
+  width: 350px;
+  height: 300px;
 }
 
 .list {

@@ -39,7 +39,7 @@
 #### `✔投稿完了後は店舗情報詳細画面へ戻る`
 ![Image from Gyazo](https://i.gyazo.com/e4c3603eb4fe7cf66de871d7d747d174.gif)
 
-![Image from Gyazo](https://i.gyazo.com/96ddc0d6cadfd274aef4527b23351def.gif)
+![Image from Gyazo](https://i.gyazo.com/7ca4b786ab73d0e1bc29ab4d80f847cd.gif)
 
 
 

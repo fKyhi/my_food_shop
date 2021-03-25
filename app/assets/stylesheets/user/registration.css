@@ -1,7 +1,7 @@
 .registration-main {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 150px);
   width: 100vw;
   min-width: 900px;
   background-color: #cdcdc0;
@@ -11,7 +11,7 @@
   height: 100%;
   width: 80%;
   background-color: #cdcdc0;
-  padding: 50px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -22,12 +22,12 @@
   color: #ffffff;
   font-weight: bold;
   font-size: 3rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .form-group {
   margin: 10px auto;
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -61,7 +61,7 @@
 
 .register-btn {
   height: 50px;
-  width: 40%;
+  width: 20%;
   margin: 0 auto;  
 }
 
