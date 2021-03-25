@@ -18,6 +18,9 @@
 
 # APP URL
 ### **https://my-food-shop.herokuapp.com/**
+- アカウント名： fkdk
+- パスワード： 0924
+<br>
 
 # 利用方法
 
