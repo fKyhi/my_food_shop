@@ -84,6 +84,7 @@
   width: 100vw;
   text-align: center;
   height: 100px;
+  padding: 35px;
 }
 .new-food {
   background-color: #b0941e;
@@ -107,7 +108,7 @@
   font-family: 'Belgrano', serif;
   text-align: center;
   border-bottom: 5px solid #111111;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .food-title {

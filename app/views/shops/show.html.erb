@@ -37,11 +37,13 @@
       </tbody>
     </table>
   </div>
+</div>
+<div class="food-title-content">
+  <h2 class="food-title">Food Lists</h2>
+</div>
 
   <div class="food-contents">
-    <div class="food-title-content">
-      <h2 class="food-title">Food Lists</h2>
-    </div>
+    
 
     <% if user_signed_in?%>
     <div class="new-food-btn">
@@ -71,6 +73,6 @@
       <% end %>
     </ul>
   </div>
-</div>
+
 
 <%= render "shared/footer" %>
