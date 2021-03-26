@@ -1,10 +1,11 @@
 .registration-main {
   display: flex;
   justify-content: center;
-  height: calc(100vh - 150px);
+  /* height: calc(100vh - 150px); */
   width: 100vw;
   min-width: 900px;
   background-color: #cdcdc0;
+  padding: 50px;
 }
 
 .form-wrap {
@@ -85,6 +86,7 @@
   font-weight: bold;
   font-size: 16px;
   color: red;
+  list-style: none;
 }
 
 .error-message {
@@ -92,4 +94,5 @@
   font-weight: bold;
   font-size: 16px;
   color: red;
+  list-style: none;
 }
