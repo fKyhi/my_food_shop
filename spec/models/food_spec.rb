@@ -16,17 +16,17 @@ RSpec.describe Food, type: :model do
       it 'imageが空だと保存できない' do
         @food.image = nil
         @food.valid?
-        expect(@food.errors.full_messages).to include "Image can't be blank"
+        expect(@food.errors.full_messages).to include "画像を入力してください"
       end
       it 'nameが空だと保存できない' do
         @food.name = ' '
         @food.valid?
-        expect(@food.errors.full_messages).to include "Name can't be blank"
+        expect(@food.errors.full_messages).to include "food名を入力してください"
       end
       it 'explainが空だと保存できない' do
         @food.explain = ' '
         @food.valid?
-        expect(@food.errors.full_messages).to include "Explain can't be blank"
+        expect(@food.errors.full_messages).to include "food情報を入力してください"
       end
     end
   end

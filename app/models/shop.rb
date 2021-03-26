@@ -11,6 +11,6 @@ class Shop < ApplicationRecord
     validates :name
     validates :address
     validates :explain
-    validates :category_id, numericality: { other_than: 1 }
+    validates :category_id, numericality: { other_than: 1, message: "は「--」以外を選択してください" }
   end
 end

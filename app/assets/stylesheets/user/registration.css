@@ -78,3 +78,18 @@
   font-family: 'Belgrano', serif;
   cursor: pointer;
 }
+
+/* エラーメッセージ */
+.login-flash-message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: red;
+}
+
+.error-message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: red;
+}

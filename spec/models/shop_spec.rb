@@ -16,28 +16,27 @@ RSpec.describe Shop, type: :model do
       it 'nameが空だと保存できない' do
         @shop.name = ''
         @shop.valid?
-        expect(@shop.errors.full_messages).to include "Name can't be blank"
+        expect(@shop.errors.full_messages).to include "shop名を入力してください"
       end
       it 'category_idが「--」だと保存できない' do
         @shop.category_id = 1
         @shop.valid?
-        expect(@shop.errors.full_messages).to include 'Category must be other than 1'
+        expect(@shop.errors.full_messages).to include 'カテゴリーは「--」以外を選択してください'
       end
       it 'addressが空だと保存できない' do
         @shop.address = ''
         @shop.valid?
-        expect(@shop.errors.full_messages).to include "Address can't be blank"
+        expect(@shop.errors.full_messages).to include "住所を入力してください"
       end
       it 'explainが空だと保存できない' do
         @shop.explain = ''
         @shop.valid?
-        expect(@shop.errors.full_messages).to include "Explain can't be blank"
+        expect(@shop.errors.full_messages).to include "shop情報を入力してください"
       end
       it 'imageが空だと保存できない' do
         @shop.image = nil
         @shop.valid?
-        binding.pry
-        expect(@shop.errors.full_messages).to include "Image can't be blank"
+        expect(@shop.errors.full_messages).to include "画像を入力してください"
       end
     end
   end

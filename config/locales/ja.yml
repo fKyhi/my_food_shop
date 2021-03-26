@@ -1,0 +1,15 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+     shop:
+       image: 画像
+       name: shop名
+       category_id: カテゴリー
+       address: 住所
+       explain: shop情報
+     food:
+       image: 画像
+       name: food名
+       explain: food情報
