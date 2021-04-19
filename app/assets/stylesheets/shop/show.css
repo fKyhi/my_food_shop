@@ -4,6 +4,7 @@
   background-color: #cdcdc0;
 }
 
+/* edit/destroy btn */
 .btn-contents {
   flex-direction: column;
   width: 100vw;
@@ -24,6 +25,15 @@
   font-family: 'Belgrano', serif;
 }
 
+.shop-edit-btn:hover {
+  opacity: 0.5;
+}
+
+.shop-edit-btn:active {
+  color: #111111;
+  background-color: lightgreen;
+}
+
 .shop-destroy-btn {
   width: 100px;
   padding: 10px 30px;
@@ -35,6 +45,15 @@
   color: #ffffff;
   font-weight: bold;
   font-family: 'Belgrano', serif;
+}
+
+.shop-destroy-btn:hover {
+  opacity: 0.5;
+}
+
+.shop-destroy-btn:active {
+  color: red;
+  background-color: lightpink;
 }
 
 .shop-img-content {
@@ -86,6 +105,15 @@
   height: 100px;
   padding: 35px;
 }
+
+.new-food-btn:hover {
+  opacity: 0.5;
+}
+
+.new-food-btn:active {
+  color: orange;
+}
+
 .new-food {
   background-color: #b0941e;
   font-size: 2rem;
@@ -94,6 +122,11 @@
   font-weight: bold;
   padding: 25px;
   border-radius: 10px;
+}
+
+.new-food:active {
+  color: orange;
+  background-color: #ffffff;
 }
 
 .food-contents {
@@ -151,6 +184,10 @@
 .food-img {
   width: 350px;
   height: 300px;
+}
+
+.food-img:hover {
+  opacity: 0.5;
 }
 
 .list {
