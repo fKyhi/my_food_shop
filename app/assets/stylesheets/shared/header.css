@@ -19,6 +19,10 @@
   font-family: 'Belgrano', serif;
 }
 
+.title:hover {
+  color: orange;
+}
+
 .nav {
   font-size: 20px;
   padding: 5px 0;
@@ -29,6 +33,22 @@
   align-items: center;
   font-family: 'Belgrano', serif;
   list-style: none;
+}
+
+.user-nickname:hover {
+  color: orange;
+}
+
+.logout:hover {
+  color: orange;
+}
+
+.login:hover {
+  color: orange;
+}
+
+.sign-up:hover {
+  color: orange;
 }
 
 .user-nickname {

@@ -129,7 +129,9 @@ ul,li {
   height: 300px;
 }
 
-
+.shop-img:hover {
+  opacity: 0.5;
+}
 
 
 
