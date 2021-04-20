@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.register-edit-btn:hover {
+  opacity: 0.5;
+}
+
 .register-btn-edit {
   text-align: center;
   margin-top: 20px;
@@ -33,4 +37,8 @@
   font-weight: bold;
   font-family: 'Belgrano', serif;
   cursor: pointer;
+}
+
+.user-destroy:hover {
+  opacity: 0.5;
 }

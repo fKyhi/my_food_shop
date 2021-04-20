@@ -22,3 +22,7 @@
   border: none;
   cursor: pointer;
 }
+
+.login-red-btn:hover {
+  opacity: 0.5;
+}

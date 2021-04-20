@@ -80,6 +80,10 @@
   cursor: pointer;
 }
 
+.register-red-btn:hover {
+  opacity: 0.5;
+}
+
 /* エラーメッセージ */
 .login-flash-message {
   text-align: center;

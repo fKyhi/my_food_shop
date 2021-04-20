@@ -161,3 +161,8 @@ ul,li {
 .shop-btn-icon {
   width: 100%;
 }
+
+.shop-btn:hover {
+  opacity: 0.9;
+  background-color: lightgreen;
+}
