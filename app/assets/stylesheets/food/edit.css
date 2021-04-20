@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.food-edit-btn:hover {
+  opacity: 0.5;
+}
+
 .food-destroy-content {
   width: 100vw;
   text-align: center;
@@ -27,4 +31,8 @@
   font-weight: bold;
   font-family: 'Belgrano', serif;
   cursor: pointer;
+}
+
+.food-destroy-btn:hover {
+  opacity: 0.5;
 }

@@ -27,3 +27,7 @@
   border: none;
   cursor: pointer;
 }
+
+.food-new-btn:hover {
+  opacity: 0.5;
+}
