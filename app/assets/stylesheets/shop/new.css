@@ -82,6 +82,10 @@
   border-radius: 10px;
 }
 
+.back-btn:hover {
+  opacity: 0.5;
+}
+
 .select-box {
   width: 200px;
   height: 30px;
