@@ -66,6 +66,10 @@
   cursor: pointer;
 }
 
+.shop-new-btn:hover {
+  opacity: 0.5;
+}
+
 .back-btn {
   text-align: center;
   font-size: 20px;
