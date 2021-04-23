@@ -60,7 +60,7 @@
   width: 40vw;
   height: 50vh;
   background-color: #ffffff;
-  margin: 0 0 30px 15px;
+  margin: 0 0 30px 50px;
 }
 
 .shop-box-img {
@@ -75,7 +75,7 @@
   height: 50vh;
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 50px;
   width: 55vw;
 }
 
