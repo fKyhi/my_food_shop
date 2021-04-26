@@ -104,11 +104,13 @@
 
 /* テーブルcss */
 
+/* food追加ボタン */
 .new-food-btn {
-  width: 100vw;
+  width: 340px;
   text-align: center;
   height: 100px;
   padding: 35px;
+  margin: 0 auto;
 }
 
 .new-food-btn:hover {
@@ -134,6 +136,7 @@
   background-color: #ffffff;
 }
 
+/* food追加ボタン */
 .food-contents {
   background-color: #f6efdb;
 }
