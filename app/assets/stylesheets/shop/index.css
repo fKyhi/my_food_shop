@@ -198,12 +198,15 @@ h1 {
   width: 140px;
   background-color: #ff9933;
   text-align: center;
-  border-radius: 40%;
+  border-radius: 30%;
   bottom: 32px;
   right: 32px;
   padding: 15px;
   position: fixed;
   text-decoration: none;
+  border-bottom: 8px solid #b84c00;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 .shop-btn-text {
@@ -220,6 +223,9 @@ h1 {
 }
 
 .shop-btn:hover {
-  opacity: 0.9;
-  background-color: lightgreen;
+  margin-top: 3px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 3px solid #b84c00;
 }
+/* shop投稿ボタン */
