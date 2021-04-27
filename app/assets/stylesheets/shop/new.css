@@ -64,10 +64,16 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
+  border-bottom: 5px solid #b84c00;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 .shop-new-btn:hover {
-  opacity: 0.5;
+  margin-top: 30px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
 }
 
 .back-btn {
@@ -80,10 +86,14 @@
   margin: 0 auto;
   background-color: #d52f25;
   border-radius: 10px;
+  border-bottom: 5px solid #b84c00;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 .back-btn:hover {
-  opacity: 0.5;
+  background: #b82119;
+  border-bottom: 2px solid #b84c00;
 }
 
 .select-box {
