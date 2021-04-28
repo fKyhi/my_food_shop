@@ -8,7 +8,7 @@
 }
 
 .header-title {
-  padding: 3px 0;
+  padding: 1px 0;
 }
 
 .title {
@@ -24,7 +24,7 @@
 }
 
 .nav {
-  font-size: 25x;
+  font-size: 25px;
   padding: 5px 0;
   display: flex;
   text-align: center;
