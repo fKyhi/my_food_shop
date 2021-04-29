@@ -115,10 +115,7 @@
 
 .new-food-btn:hover {
   opacity: 0.5;
-}
-
-.new-food-btn:active {
-  color: orange;
+  
 }
 
 .new-food {
@@ -129,6 +126,15 @@
   font-weight: bold;
   padding: 25px;
   border-radius: 10px;
+  border-bottom: 5px solid #9b8012;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+.new-food:hover {
+  margin-top: 3px;
+  background: #f56500;
+  border-bottom: 3px solid #b84c00;
 }
 
 .new-food:active {
