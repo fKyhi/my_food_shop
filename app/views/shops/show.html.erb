@@ -58,15 +58,22 @@
           </div>
         <% end %>
         <div class="food-info">
-          <div class="food-user-nickname">
-            投稿者：<%= food.user.nickname %>
-          </div>
-          <h3 class="food-name">
-            Food名：<%= food.name %>
-          </h3>
-          <div class="food-explain">
-            Food情報：<%= food.explain %>
-          </div>
+          <table>
+            <tbody>
+              <tr>
+                <th class="food-user-nickname">投稿者：</th>
+                <td><%= food.user.nickname %></td>
+              </tr>
+              <tr>
+                <th class="food-name">Food名：</th>
+                <td><%= food.name %></td>
+              </tr>
+              <tr>
+                <th class="food-explain">Food情報：</th>
+                <td><%= food.explain %></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </li>
     <% end %>
