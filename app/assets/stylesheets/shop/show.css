@@ -223,6 +223,7 @@ text-align: center;
 .detail-food {
   font-weight: bold;
   text-align: end;
+  width: 130px;
 }
 
 .detail-explain {
