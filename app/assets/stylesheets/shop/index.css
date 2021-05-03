@@ -231,3 +231,7 @@ h1 {
   border-bottom: 3px solid #b84c00;
 }
 /* shop投稿ボタン */
+
+.detail-th {
+  text-align: end;
+}
